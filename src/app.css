@@ -4,70 +4,62 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
- 
+    --background:42 15% 87%;
+    --foreground: 146 30% 20%;/* لون النص*/
+
+    --primary:146 27% 15%;
+    --primary-foreground: 0 0% 100%;
+
+   
+    --secondary:  164 20% 15%;/*لون الزر*/
+    --secondary-foreground: 0 0% 100%;/*لون كلام الزر*/
+
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 164 20% 15%;
+    --input: 240 5.9% 90%;
+    --ring: 0 0% 0%;/* لما اضغط تاب يطلع حواف عالزر*/
+    --radius: 0rem;
+
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
- 
+    --accent: 164 20% 15%;
+    --accent-foreground: 240 5.9% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;/*لون النص او اي عنصر في الناف بار*/
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
- 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
- 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
- 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
- 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
- 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
- 
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 0 0% 98%;
- 
-    --ring: 240 10% 3.9%;
- 
-    --radius: 0.5rem;
   }
- 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
- 
-    --muted: 240 3.7% 15.9%;
+    --background: 164 20% 10% ;
+    --foreground: 42 15% 87%;
+
+    --primary: 30 17% 90%;
+    --primary-foreground: 40 4.2% 27.8%;
+    
+    --secondary: 42 15% 87%;
+    --secondary-foreground: 164 20% 10%;
+    /*140 8% 42%
+    0 0% 0%
+    hsl(162, 24%, 20%)*/
+
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
- 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
- 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
- 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
- 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
- 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
- 
-    --accent: 240 3.7% 15.9%;
+    --accent: 12 6.5% 15.1%;
     --accent-foreground: 0 0% 98%;
- 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
- 
-    --ring: 240 4.9% 83.9%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 42 15% 87%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
   }
-}
- 
+} 
 @layer base {
   * {
     @apply border-border;
