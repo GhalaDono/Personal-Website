@@ -1,54 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
-    --background:42 15% 87%;
-    --foreground: 146 30% 20%;/* لون النص*/
-
-    --primary:146 27% 15%;
-    --primary-foreground: 0 0% 100%;
-
-   
-    --secondary:  164 20% 15%;/*لون الزر*/
-    --secondary-foreground: 0 0% 100%;/*لون كلام الزر*/
-
+    --background: #a7aab9;
+    /* لون النص */
+    --foreground: #ffff;
+    --primary: 0 0% 100%;
+    /* لون الزر */
+    --primary-foreground: 0 0% 0%;
+    /* لون غلا دونو، لون كلام الزر */
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 230 53% 12%;
     --destructive: 0 72.22% 50.59%;
     --destructive-foreground: 0 0% 98%;
-    
     --border: 164 20% 15%;
     --input: 240 5.9% 90%;
-    --ring: 0 0% 0%;/* لما اضغط تاب يطلع حواف عالزر*/
+    --ring: 0 0% 0%;
+    /* لما اضغط تاب يطلع حواف عالزر */
     --radius: 0rem;
-
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 164 20% 15%;
     --accent-foreground: 240 5.9% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;/*لون النص او اي عنصر في الناف بار*/
+    --card-foreground: 240 10% 3.9%;
+    /* لون النص أو أي عنصر في الناف بار */
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
   }
+
   .dark {
-    --background: 164 20% 10% ;
-    --foreground: 42 15% 87%;
-
-    --primary: 30 17% 90%;
-    --primary-foreground: 40 4.2% 27.8%;
-    
-    --secondary: 42 15% 87%;
-    --secondary-foreground: 164 20% 10%;
-    /*140 8% 42%
-    0 0% 0%
-    hsl(162, 24%, 20%)*/
-
+    --background: #080b1a;
+    /* لون الخلفية في الدارك مود */
+    --foreground: #ffff;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: #ff0000;
+    --secondary-foreground: #ff0000;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
-
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 12 6.5% 15.1%;
@@ -59,12 +55,29 @@
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
-} 
+}
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    font-family: "Lora", serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    /* @apply bg-background text-foreground; */
   }
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+}
+
+
+.logo {
+  font-family: 'Cinzel Decorative', serif;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.7); /* تأثير توهج */
 }
