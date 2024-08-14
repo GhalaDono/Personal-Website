@@ -11,42 +11,6 @@
     { text: "Contact", href: "./contact" },
   ];
 
-  onMount(() => {
-    const toggleButton = document.querySelector('.toggle') as HTMLElement | null;
-    const slide = document.querySelector('.slide') as HTMLElement | null;
-
-    if (toggleButton && slide) {
-      toggleButton.addEventListener('click', () => {
-        if (slide.classList.contains('hidden')) {
-          // Show the slide
-          slide.classList.remove('hidden');
-          slide.style.display = 'flex';
-          requestAnimationFrame(() => {
-            slide.style.transform = 'translateX(0)';
-            slide.style.opacity = '1';
-          });
-        } else {
-          // Hide the slide with animation first
-          slide.style.transform = 'translateX(300px)';
-          slide.style.opacity = '0';
-          
-          // After the transition, hide the element
-          slide.addEventListener('transitionend', () => {
-            slide.style.display = 'none';
-            slide.classList.add('hidden');
-            // Reset transform and opacity to avoid accumulated effects
-            slide.style.transform = '';
-            slide.style.opacity = '';
-          }, { once: true });
-        }
-      });
-      
-      // Initial state
-      slide.style.transform = 'translateX(300px)';
-      slide.style.opacity = '0';
-      slide.style.display = 'none'; // Make sure it's hidden initially
-    }
-  });
 </script>
 
 <div class="px-6 py-6 w-full">

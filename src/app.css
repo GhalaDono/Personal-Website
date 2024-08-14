@@ -7,12 +7,9 @@
 @layer base {
   :root {
     --background: #a7aab9;
-    /* لون النص */
     --foreground: #ffffff;
     --primary: 0 0% 100%;
-    /* لون الزر */
     --primary-foreground: 0 0% 0%;
-    /* لون غلا دونو، لون كلام الزر */
     --secondary: 0 0% 100%;
     --secondary-foreground: 230 53% 12%;
     --destructive: 0 72.22% 50.59%;
@@ -20,7 +17,6 @@
     --border: 164 20% 15%;
     --input: 240 5.9% 90%;
     --ring: 0 0% 0%;
-    /* لما اضغط تاب يطلع حواف عالزر */
     --radius: 0rem;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
@@ -28,14 +24,12 @@
     --accent-foreground: 240 5.9% 10%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
-    /* لون النص أو أي عنصر في الناف بار */
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
   }
 
   .dark {
     --background: #080b1a;
-    /* لون الخلفية في الدارك مود */
     --foreground: #ffffff;
     --primary: 0 0% 100%;
     --primary-foreground: 0 0% 0%;
@@ -86,19 +80,20 @@
 }
 
 .slide {
-  height: 100vh;
-  width: 300px;
+  height: 100%;
+  width: 250px;
   position: absolute;
   background-color: #fff;
   top: 0;
   right: 0;
   bottom: 0;
   visibility: hidden;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transform: translateX(300px);
+  transform: translateX(250px);
   opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
 }
@@ -112,21 +107,17 @@
   padding: 10px;
   border: 2px solid #080b1a;
   border-radius: 5px;
-  /* لجعل الزوايا مدورة */
 }
 
 ul {
   list-style-type: none;
-  /* إزالة النقاط من القائمة */
   padding: 0;
   margin: 0;
   width: 100%;
-  /* لضبط عرض القائمة بالكامل */
 }
 
 ul li {
   margin-bottom: 20px;
-  /* لضبط المسافة بين العناصر */
 }
 
 ul li a {
@@ -138,11 +129,8 @@ ul li a {
   transition: 0.2s ease-out;
   display: flex;
   justify-content: center;
-  /* لمحاذاة المحتوى الداخلي (النص والأيقونة) في الوسط */
   align-items: center;
-  /* لمحاذاة النص والأيقونة أفقيًا في الوسط */
   padding: 10px 20px;
-  /* لضبط المسافة الداخلية */
 }
 
 ul li:hover a {
@@ -156,7 +144,6 @@ ul li a i {
 
 .flex-container {
   position: relative;
-  /* تأكد من تحديد موقع الحاوية */
 }
 
 .toggle {
@@ -218,14 +205,14 @@ input:checked ~ .toggle .middle_line {
   transform: rotate(20px);
 }
 
-
 input:checked ~ .slide {
   visibility: visible;
   transform: translateX(0);
   opacity: 1;
 }
+
 input:not(:checked) ~ .slide {
-  transform: translateX(300px);
+  transform: translateX(250px);
   opacity: 0;
-  display: none; /* سيجعل الشريحة غير مرئية ومخفية */
+  display: none;
 }
