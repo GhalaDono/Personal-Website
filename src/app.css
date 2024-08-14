@@ -82,7 +82,7 @@
 .slide {
   height: 100%;
   width: 250px;
-  position: absolute;
+  position: fixed; /* تغيير من absolute إلى fixed */
   background-color: #fff;
   top: 0;
   right: 0;
@@ -93,11 +93,10 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transform: translateX(250px);
+  transform: translateX(100%); /* تغييره من -250px إلى 100% */
   opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* تقليل المدة الزمنية لـ 0.5s */
 }
-
 .slide h1 {
   color: #000;
   font-weight: 1000;
@@ -213,7 +212,11 @@ input:checked ~ .slide {
 }
 
 input:not(:checked) ~ .slide {
-  transform: translateX(250px);
+  transform: translateX(100%);
   opacity: 0;
-  display: none;
-}
+  visibility:visible;}
+
+  input[type="checkbox"] {
+    display: none; /* اخفاء الشيك بوكس بشكل كامل */
+  }
+  
