@@ -5,7 +5,6 @@
   const links = [
     { text: "Home", href: "./" },
     { text: "Resume", href: "./resume" },
-    { text: "Projects", href: "./projects" },
     { text: "Contact", href: "./contact" },
   ];
 </script>
@@ -27,11 +26,12 @@
         <Button 
           href={link.href} 
           variant="link" 
-          class={`text-lg ${link.text === 'Home' ? 'ml-0' : link.text === 'Resume' ? 'ml-4 mr-0' : link.text === 'Projects' ? 'ml-8' : 'ml-9'} mr-8`}
+          class={`text-xl ${link.text === 'Home' ? 'mr-5' : 'mr-9'} ml-8`}
         >
           {link.text}
         </Button>
       {/each}
+      
 
         <ThemeSwitch />
       </span>
@@ -50,9 +50,6 @@
               <li><a href="./"><i class="fas fa-home"></i>Home</a></li>
               <li>
                 <a href="./resume"><i class="fas fa-file-alt"></i>Resume</a>
-              </li>
-              <li>
-                <a href="./projects"><i class="fas fa-code"></i>Projects</a>
               </li>
               <li>
                 <a href="./contact"><i class="fas fa-envelope"></i>Contact</a>

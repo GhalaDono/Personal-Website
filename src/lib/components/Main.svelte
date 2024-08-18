@@ -58,19 +58,19 @@
         </div> -->
   </section>
 
-  <section class="py-72 lg:py-96 flex flex-col lg:flex-row justify-center items-center gap-x-16 text-white">
-    <div class="flex flex-col gap-2 text-center lg:text-left">
+  <section class="py-60 lg:py-96 flex flex-col lg:flex-row justify-center items-center gap-x-16 text-white">
+    <div class="flex flex-col gap-2 text-center ">
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
         Here's my <span class="text-[#A3BFFA] shadow-highlight">projects</span>
       </h3>
-      <div class="flex flex-col justify-center gap-10 mt-20">
-        <div class="w-full sm:gap-10 xl:gap-20 h-[420px]">
+      <div class="flex flex-wrap justify-center gap-10  mt-20">
+        <div class=" sm:w-[15.625rem] md:w-[18.75rem] lg:w-[21.875rem] h-[26.25rem]">
           <CardFlip />
         </div>
-        <div class="w-full sm:w-[250px] md:w-[300px] lg:w-[350px] h-[420px]">
+        <div class=" sm:w-[15.625rem] md:w-[18.75rem] lg:w-[21.875rem] h-[26.25rem]">
           <CardFlip />
         </div>
-      </div>
+      </div>      
     </div>
   </section>
-  </main>
+        </main>
