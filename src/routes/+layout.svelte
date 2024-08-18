@@ -4,13 +4,13 @@
     // @ts-ignore
     import Nav from "$lib/components/Nav.svelte";
 
-    let y;
-    let innerHeight=0;
-    let innerWidth=0;
+    // let y;
+    // let innerHeight=0;
+    // let innerWidth=0;
 
-    function goTop(){
-        document.body.scrollIntoView()
-    }
+    // function goTop(){
+    //     document.body.scrollIntoView()
+    // }
 </script>
 
 <Nav />
