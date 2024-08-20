@@ -18,7 +18,7 @@
         <h1 class="text-3xl font-semibold pb-5">{project.title}</h1>
         <p class="pb-20">{project.description}</p>
         <a href={project.link} target="_blank" class="bg-[#a3bffa] px-[0.375rem] py-[0.125rem] font-semibold text-white rounded-full absolute translate-y-[0.4375rem] -bottom-[1rem] delay-500 duration-1000 group-hover:bottom-[5rem] scale-0 group-hover:scale-125">
-          Watch Now
+          Try It Now!
         </a>
       </div>
     </div>
