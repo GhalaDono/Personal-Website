@@ -2,45 +2,37 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Ghala | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ghala | Portfolio</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-		rel="stylesheet">
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-	<link rel="icon" href="%sveltekit.assets%/icon2.png" />
-	%sveltekit.head%
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
-		integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		
-
+    <!-- Icon -->
+    <link rel="icon" href="%sveltekit.assets%/icon2.png" />
+    %sveltekit.head%
 </head>
 
 <body data-sveltekit-preload-data="hover">
-	<div style="display: contents" class="relative z-[1]">%sveltekit.body%</div>
+    <!-- Particles Background -->
+    <div id="particles-js" class="absolute inset-0 w-full h-full z-[-1]"></div>
 
-	<div class="absolute min-h-screen top-0 left-0 w-full z-[-1] opacity-70">
-		<div id="particles-js" class="absolute inset-0"></div>
-	</div>
+    <!-- Main Content -->
+    <div style="display: contents" class="relative z-[1]">
+        %sveltekit.body%
+    </div>
 
-	<script>
-		particlesJS.load("particles-js", "/assets/particlesjs-config.json", function () {
-			console.log("callback - particles.js config loaded");
-		});
-
-	</script>
-
+    <!-- Particles.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        particlesJS.load("particles-js", "/assets/particlesjs-config.json", function () {
+            console.log("callback - particles.js config loaded");
+        });
+    </script>
 </body>
 
 </html>

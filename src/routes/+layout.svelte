@@ -3,6 +3,7 @@
     import { ModeWatcher } from "mode-watcher";
     // @ts-ignore
     import Nav from "$lib/components/Nav.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 
     // let y;
     // let innerHeight=0;
@@ -13,8 +14,20 @@
     // }
 </script>
 
-<Nav />
+  
+<!-- layout.svelte -->
+  
+  <div class="flex flex-col min-h-screen">
+    <Nav />
+    <div class="flex-1">
+      <slot></slot> <!-- هذا هو المكان الذي سيظهر فيه محتوى الصفحة الفردية -->
+    </div>
+    <Footer />
+  </div>
+  
+    
 <ModeWatcher />
+
 
 <!-- <div
     class="relative flex flex-col max-w-[14000px] mx-auto w-full text-sm
@@ -34,4 +47,3 @@ sm:text-base min-h-screen"
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth
 /> -->
-<slot></slot>

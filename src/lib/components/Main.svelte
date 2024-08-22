@@ -20,14 +20,14 @@
   ];
 </script>
 
-<main class="h-screen px-6 flex flex-col flex-1 p-4">
+<main class="flex-1 px-6">
   <section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
     <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10 mt-12">
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
         Hi! I'm <span class="text-[#A3BFFA] shadow-highlight">Ghala</span> Al-Masoudi
         <br />
         <span class="text-[#A3BFFA] shadow-highlight">Front-End</span> Developer
-        <span class="text-sm floating-text ">🫡 إن شاء الله</span>
+        <span class="text-sm floating-text z-4">🫡 إن شاء الله</span>
       </h2>
       <p class="text-base sm:text-lg md:text-xl poppins mt-3 ">
         I am a student at Umm Al-Qura University, studying in the Faculty of Computing with a major in Computer Science, and I am a beginner in front-end development.
@@ -40,18 +40,18 @@
     </div>
   </section>
 
-  <section class=" py-20 lg:py-44 flex flex-col gap-24">
-    <div class="flex flex-col gap-2 text-center ">
+  <section class=" lg:py-44 flex flex-col gap-24 mt-60  mb-64">
+    <div class="flex flex-col gap-2 text-center">
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
         Here's my <span class="text-[#A3BFFA] shadow-highlight">projects</span>
       </h3>
-      <div class="flex flex-wrap justify-center gap-5">
+      <div class="flex flex-wrap justify-center gap-10">
         {#each projects as project}
           <div class="sm:w-[15.625rem] md:w-[18.75rem] lg:w-[21.875rem] h-[26.25rem]">
             <CardFlip project={project} />
           </div>
         {/each}
-      </div>      
+      </div>
     </div>
   </section>
 </main>
