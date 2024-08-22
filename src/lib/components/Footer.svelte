@@ -1,5 +1,5 @@
 <footer
-    class="py-10 sm:py-32 bg-[#080b1a] border-b border-[#3c4884] border-t border-solid flex flex-col gap-4 sm:gap-8 justify-center items-center"
+    class="py-10 bg-[#080b1a] border-b border-[#3c4884] border-t border-solid flex flex-col gap-4 sm:gap-8 justify-center items-center"
 >
     <p class="px-4 py-2 bg-white text-slate-950 font-medium">
         Connect with me &darr;
