@@ -3,7 +3,6 @@
     import { ModeWatcher } from "mode-watcher";
     // @ts-ignore
     import Nav from "$lib/components/Nav.svelte";
-    import Footer from "$lib/components/Footer.svelte";
 
     // let y;
     // let innerHeight=0;
@@ -22,7 +21,7 @@
     <div class="flex-1">
       <slot></slot> <!-- هذا هو المكان الذي سيظهر فيه محتوى الصفحة الفردية -->
     </div>
-    <Footer />
+    
   </div>
   
     

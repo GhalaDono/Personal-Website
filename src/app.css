@@ -39,20 +39,20 @@
     --toggle-shadow: #080b1a;
     --primary: 0 0% 100%;
     --primary-foreground: 0 0% 0%;
-    --secondary: #ff0000;
-    --secondary-foreground: #ff0000;
+    --secondary:0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
+    --popover: 222 84% 74%;
     --popover-foreground: 0 0% 95%;
     --muted: 0 0% 15%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted-foreground: 0 0% 50%;
     --accent: 12 6.5% 15.1%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 42 15% 87%;
-    --input: 240 3.7% 15.9%;
+    --input: 0 0% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
 }
@@ -260,6 +260,10 @@ input[type="checkbox"] {
 
 .shadow-highlight {
   text-shadow: 1px 1px 4px rgba(163, 191, 250, 0.5), 0 0 6px rgba(163, 191, 250, 0.4);
+}
+
+.shadow-bg {
+  box-shadow: 1px 1px 4px rgba(69, 85, 120, 0.5), 0 0 6px rgba(163, 191, 250, 0.4);
 }
 
 .floating-text {
